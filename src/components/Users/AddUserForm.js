@@ -51,6 +51,7 @@ const AddUserForm = (props) => {
    return (
       
       <Card className={styles.input}>
+         {error && <ErrorModal onButtonClick={errorHandler} title={error.header} message={error.message}></ErrorModal>}
          <form onSubmit={submitButtonHandler}>
             <label htmlFor="username">Username</label>
             <input id="username" type="text" value={usernameTitle} onChange={usernameTitleChangeHandler} />
@@ -58,7 +59,6 @@ const AddUserForm = (props) => {
             <input id="age" type="number" value={ageTitle} onChange={ageTitleChangeHandler} />
             <Button type="submit">{'Add User'}</Button>
          </form>
-         {error && <ErrorModal onButtonClick={errorHandler} title={error.header} message={error.message}></ErrorModal>}
       </Card>
    )
 }
