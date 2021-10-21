@@ -25,7 +25,7 @@ const Login = (props) => {
       }, 500)
 
       return () => {
-         console.log('CLENUP')
+         console.log('CLENUP ')
          clearTimeout(identifier);
       }
 
