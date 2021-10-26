@@ -4,6 +4,12 @@
    padding: 0;
    max-height: 20rem;
    overflow: auto;
+   overflow-x: hidden;
+ }
+
+ .cart-items li {
+   display:flex;
+   justify-content: space-between;
  }
  
  .total {
