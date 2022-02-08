@@ -15,6 +15,7 @@ const Tasks = (props) => {
       );
    }
 
+   
    let content = taskList;
 
    if (props.error) {
